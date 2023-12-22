@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login/Signup</title>
+</head>
+<body>
+  
+    <div class="glass-container">
+        <div class="form-container">
+            <div class="profile-picture" id="profile-picture"></div>
+            <form id="login-form" class="form">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="button" onclick="login()">Login</button>
+                <p>or</p>
+                <button type="button" onclick="showSignupForm()">Sign Up</button>
+            </form>
+            <form id="signup-form" class="form" style="display: none;">
+                <h2>Sign Up</h2>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" required>
+                <button type="button" onclick="signup()">Sign Up</button>
+                <p>or</p>
+                <button type="button" onclick="showLoginForm()">Login</button>
+            </form>
+            <div class="social-buttons">
+                <button class="google-btn" onclick="continueWithGoogle()">Continue with Google</button>
+                <button class="facebook-btn" onclick="continueWithFacebook()">Continue with Facebook</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
